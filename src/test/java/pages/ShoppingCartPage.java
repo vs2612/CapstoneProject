@@ -15,7 +15,7 @@ public class ShoppingCartPage {
     // Locators
     private By addToCartButton = By.xpath("//button[contains(@onclick, 'cart.add')]");
     private By cartButton = By.xpath("//a[@title='Shopping Cart']");
-    private By cartForm =  By.xpath("//*[@class='col-sm-12']/h1[text()='Use Gift Certificate']");
+    private By cartForm =   By.xpath("//*[@class='col-sm-12']");
     private By quantityInput = By.xpath("//input[@name='quantity[1376]']");
     private By updateButton = By.xpath("//button[@type='submit'][i[@class='fa fa-refresh']]");
 
