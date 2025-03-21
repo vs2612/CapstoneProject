@@ -13,7 +13,7 @@ public class ShoppingCartPage {
     private WebDriverWait wait;
 
     // Locators
-    private By addToCartButton = By.xpath("//*[@id=\"content\"]/div[2]/div[1]/div/div[3]/button[1]/span");
+    private By addToCartButton = By.xpath("//button[contains(@onclick, 'cart.add')]");
     private By cartButton = By.xpath("//*[@id=\"top-links\"]/ul/li[4]/a/span");
     private By cartForm = By.xpath("//*[@id=\"content\"]/form");
     private By quantityInput = By.xpath("//*[@id=\"content\"]/form/div/table/tbody/tr/td[4]/div/input");
