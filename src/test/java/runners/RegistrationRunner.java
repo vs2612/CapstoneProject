@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features/Register.feature",
     glue = "steps",
-    plugin = {"pretty", "html:target/registration.html"}
+    plugin = {"pretty", "html:target/registration.json"}
 )
 public class RegistrationRunner extends AbstractTestNGCucumberTests {
 }
