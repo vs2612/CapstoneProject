@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features/ProductDetails.feature",
     glue = "steps",
-    plugin = {"pretty", "html:target/productdetails.json"}
+    plugin = {"pretty", "json:target/productdetails.json"}
 )
 public class ProductDetailsRunner extends AbstractTestNGCucumberTests {
 }

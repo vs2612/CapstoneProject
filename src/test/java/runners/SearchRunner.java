@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features/Search.feature",
     glue = "steps",
-    plugin = {"pretty", "html:target/search.json"}
+    plugin = {"pretty", "json:target/search.json"}
 )
 public class SearchRunner extends AbstractTestNGCucumberTests {
 }
