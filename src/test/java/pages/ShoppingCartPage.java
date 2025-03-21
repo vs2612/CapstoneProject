@@ -13,12 +13,20 @@ public class ShoppingCartPage {
     private WebDriverWait wait;
 
     // Locators
-    private By addToCartButton = By.xpath("//*[@id=\"content\"]/div[2]/div[1]/div/div[3]/button[1]/span");
-    private By cartButton = By.xpath("//*[@id=\"top-links\"]/ul/li[4]/a/span");
-    private By cartForm = By.xpath("//*[@id=\"content\"]/form");
-    private By quantityInput = By.xpath("//*[@id=\"content\"]/form/div/table/tbody/tr/td[4]/div/input");
-    private By updateButton = By.xpath("//*[@id=\"content\"]/form/div/table/tbody/tr/td[4]/div/span/button[1]");
-    private By removeButton = By.xpath("//*[@id=\"content\"]/form/div/table/tbody/tr/td[4]/div/span/button[2]");
+ // More resilient locators
+
+    private By addToCartButton = By.xpath("//div[@id='content']//div[contains(@class, 'product-thumb')]//button[contains(@onclick, 'cart.add')]");
+
+    private By cartButton = By.xpath("//ul[contains(@class, 'top-links')]//a[contains(@href, 'checkout/cart')]");
+
+    private By cartForm = By.xpath("//div[@id='content']//form[contains(@action, 'checkout/cart')]");
+
+    private By quantityInput = By.xpath("//form[contains(@action, 'checkout/cart')]//input[contains(@name, 'quantity') or contains(@class, 'form-control')]");
+
+    private By updateButton = By.xpath("//form[contains(@action, 'checkout/cart')]//button[contains(@data-original-title, 'Update') or contains(@onclick, 'cart.update')]");
+
+    private By removeButton = By.xpath("//form[contains(@action, 'checkout/cart')]//button[contains(@data-original-title, 'Remove') or contains(@onclick, 'cart.remove')]");
+
 
     // Constructor
     public ShoppingCartPage(WebDriver driver) {

@@ -15,19 +15,29 @@ public class CheckoutPage {
     // Locators
     private By useNewAddressCheckbox = By.xpath("//input[@name='payment_address' and @value='new']");
 
-    private By firstName = By.name("firstname");
-    private By lastName = By.name("lastname");
-    private By company = By.name("company");
-    private By address1 = By.name("address_1");
-    private By address2 = By.name("address_2");
-    private By city = By.name("city");
-    private By postCode = By.name("postcode");
-    private By countryDropdown = By.name("country_id");
-    private By regionDropdown = By.name("zone_id");
-    private By billingContinueButton = By.xpath("//*[@id='button-payment-address']");
-    private By termsCheckbox = By.xpath("//*[@id='collapse-payment-method']/div/div[2]/div/input[1]");
-    private By paymentContinueButton = By.xpath("//*[@id='button-payment-method']");
-    private By paymentWarning = By.xpath("//*[@id='collapse-payment-method']/div/div[1]");
+ // Using 'By.name' where applicable (already optimal)
+ private By firstName = By.name("firstname");
+ private By lastName = By.name("lastname");
+ private By company = By.name("company");
+ private By address1 = By.name("address_1");
+ private By address2 = By.name("address_2");
+ private By city = By.name("city");
+ private By postCode = By.name("postcode");
+ private By countryDropdown = By.name("country_id");
+ private By regionDropdown = By.name("zone_id");
+
+ // Improved XPath using ID directly
+ private By billingContinueButton = By.id("button-payment-address");
+
+ // Making terms checkbox XPath more resilient
+ private By termsCheckbox = By.xpath("//div[@id='collapse-payment-method']//input[@type='checkbox']");
+
+ // Improved XPath using ID directly
+ private By paymentContinueButton = By.id("button-payment-method");
+
+ // Improved XPath with a better structure
+ private By paymentWarning = By.xpath("//div[@id='collapse-payment-method']//div[contains(@class, 'alert')]");
+
 
     public CheckoutPage(WebDriver driver) {
         this.driver = driver;
