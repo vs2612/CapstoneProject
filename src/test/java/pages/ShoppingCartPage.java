@@ -15,9 +15,9 @@ public class ShoppingCartPage {
     // Locators
     private By addToCartButton = By.xpath("//button[contains(@onclick, 'cart.add')]");
     private By cartButton = By.xpath("//a[@title='Shopping Cart']");
-    private By cartForm = By.xpath("//*[@id=\"content\"]/form");
-    private By quantityInput = By.xpath("//*[@id=\"content\"]/form/div/table/tbody/tr/td[4]/div/input");
-    private By updateButton = By.xpath("//*[@id=\"content\"]/form/div/table/tbody/tr/td[4]/div/span/button[1]");
+    private By cartForm = By.xpath("//td[@class='text-left']/a[contains(text(),'MacBook')]");
+    private By quantityInput = By.xpath("//input[@name='quantity[1376]']");
+    private By updateButton = By.xpath("//button[@type='submit'][i[@class='fa fa-refresh']]");
 
 
     // Constructor
