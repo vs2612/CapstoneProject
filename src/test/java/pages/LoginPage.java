@@ -14,15 +14,16 @@ public class LoginPage {
     private WebDriverWait wait;
 
     // Locators
-    private By myAccount = By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]");
-    private By loginLink = By.linkText("Login");
-    private By emailField = By.id("input-email");
-    private By passwordField = By.id("input-password");
-    private By loginButton = By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input[1]");
-    private By myAccountHeader = By.xpath("//h2[contains(text(),'My Account')]");
-    private By loginErrorMessage = By.xpath("//*[@id='account-login']/div[1]");  // Error message
-    private By forgottenPasswordLink = By.linkText("Forgotten Password");
-    private By continueButton = By.xpath("//*[@id='content']/form/div/div[2]/input");
+    private By myAccount = By.xpath("//a[contains(@href, 'route=account')]");
+    private By loginLink = By.xpath("//a[contains(text(), 'Login')]");
+    private By emailField = By.id("input-email");  // ID is stable, no change
+    private By passwordField = By.id("input-password");  // ID is stable, no change
+    private By loginButton = By.xpath("//input[@type='submit' and @value='Login']");
+    private By myAccountHeader = By.xpath("//h2[normalize-space()='My Account']");
+    private By loginErrorMessage = By.xpath("//div[@id='account-login']//div[contains(@class, 'alert')]");
+    private By forgottenPasswordLink = By.xpath("//a[contains(text(), 'Forgotten Password')]");
+    private By continueButton = By.xpath("//input[@type='submit' and @value='Continue']");
+
 
     // Constructor
     public LoginPage(WebDriver driver) {

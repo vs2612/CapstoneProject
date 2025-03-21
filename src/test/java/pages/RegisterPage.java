@@ -14,16 +14,17 @@ public class RegisterPage {
     private WebDriverWait wait;
 
     // Locators
-    private By myAccount = By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]");
-    private By registerLink = By.linkText("Register");
-    private By firstNameField = By.id("input-firstname");
-    private By lastNameField = By.id("input-lastname");
-    private By emailField = By.id("input-email");
-    private By telephoneField = By.id("input-telephone");
-    private By passwordField = By.id("input-password");
-    private By confirmPasswordField = By.id("input-confirm");
-    private By privacyPolicyCheckbox = By.xpath("//*[@id=\"content\"]/form/div/div/input[1]");
-    private By continueButton = By.xpath("//*[@id=\"content\"]/form/div/div/input[2]");
+    private By myAccount = By.xpath("//a[contains(@href, 'route=account')]");
+    private By registerLink = By.xpath("//a[contains(text(), 'Register')]");
+    private By firstNameField = By.id("input-firstname");  // ID is stable, no change
+    private By lastNameField = By.id("input-lastname");  // ID is stable, no change
+    private By emailField = By.id("input-email");  // ID is stable, no change
+    private By telephoneField = By.id("input-telephone");  // ID is stable, no change
+    private By passwordField = By.id("input-password");  // ID is stable, no change
+    private By confirmPasswordField = By.id("input-confirm");  // ID is stable, no change
+    private By privacyPolicyCheckbox = By.xpath("//input[@type='checkbox' and contains(@name, 'agree')]");
+    private By continueButton = By.xpath("//input[@type='submit' and @value='Continue']");
+
 
     // Constructor
     public RegisterPage(WebDriver driver) {

@@ -3,6 +3,20 @@
 <suite name="Failed suite [Capstone Project Test Suite]">
   <test thread-count="5" name="Capstone Test Execution(failed)">
     <classes>
+      <class name="runners.CheckoutRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runners.CheckoutRunner -->
+      <class name="runners.SearchRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- runners.SearchRunner -->
       <class name="runners.ProductDetailsRunner">
         <methods>
           <include name="setUpClass"/>
@@ -10,6 +24,20 @@
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- runners.ProductDetailsRunner -->
+      <class name="runners.ShoppingCartRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- runners.ShoppingCartRunner -->
+      <class name="runners.HomeRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runners.HomeRunner -->
     </classes>
   </test> <!-- Capstone Test Execution(failed) -->
 </suite> <!-- Failed suite [Capstone Project Test Suite] -->

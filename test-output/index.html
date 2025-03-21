@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Capstone_Project_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Capstone Project Test Suite</span>
+              <span class="suite-name border-failed">Capstone Project Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">9 methods, 5 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Capstone_Project_Test_Suite" class="hide-methods failed suite-Capstone_Project_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Capstone_Project_Test_Suite -->
+                      <a href="#" panel-name="suite-Capstone_Project_Test_Suite" class="show-methods failed suite-Capstone_Project_Test_Suite"> (show)</a> <!-- show-methods failed suite-Capstone_Project_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Capstone_Project_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.CheckoutRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User logs in, adds a MacBook to the cart, and proceeds to checkout&quot;, &quot;Checkout&quot;)">runScenario("User logs in, adds a MacBook to the cart, and proceeds to checkout", "Checkout")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.HomeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Search and Recommended For You&quot;, &quot;Home Page Validation&quot;)">runScenario("Validate Search and Recommended For You", "Home Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.ShoppingCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add, Update, and Remove Items in Cart&quot;, &quot;Shopping Cart Functionality&quot;)">runScenario("Add, Update, and Remove Items in Cart", "Shopping Cart Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.ProductDetailsRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Product Details After Search&quot;, &quot;Product Details Validation&quot;)">runScenario("Validate Product Details After Search", "Product Details Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.SearchRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for MacBook, filter by category, and sort results&quot;, &quot;Search Functionality&quot;)">runScenario("Search for MacBook, filter by category, and sort results", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Capstone_Project_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,37 +137,7 @@
                     <div class="method-list-content passed suite-Capstone_Project_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.ShoppingCartRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add, Update, and Remove Items in Cart&quot;, &quot;Shopping Cart Functionality&quot;)">runScenario("Add, Update, and Remove Items in Cart", "Shopping Cart Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.ProductDetailsRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Product Details After Search&quot;, &quot;Product Details Validation&quot;)">runScenario("Validate Product Details After Search", "Product Details Validation")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.LoginRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Logging in with registered credentials&quot;, &quot;User Login&quot;)">runScenario("Logging in with registered credentials", "User Login")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.HomeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Search and Recommended For You&quot;, &quot;Home Page Validation&quot;)">runScenario("Validate Search and Recommended For You", "Home Page Validation")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.SearchRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for MacBook, filter by category, and sort results&quot;, &quot;Search Functionality&quot;)">runScenario("Search for MacBook, filter by category, and sort results", "Search Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.RegistrationRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Registering a new user&quot;, &quot;User Registration&quot;)">runScenario("Registering a new user", "User Registration")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.CheckoutRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User logs in, adds a MacBook to the cart, and proceeds to checkout&quot;, &quot;Checkout&quot;)">runScenario("User logs in, adds a MacBook to the cart, and proceeds to checkout", "Checkout")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -144,6 +148,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.LoginRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt login with incorrect credentials and reset password&quot;, &quot;User Login&quot;)">runScenario("Attempt login with incorrect credentials and reset password", "User Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Capstone_Project_Test_Suite" title="runners.RegistrationRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Registering a new user&quot;, &quot;User Registration&quot;)">runScenario("Registering a new user", "User Registration")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Capstone_Project_Test_Suite -->
@@ -158,9 +167,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Capstone_Project_Test_Suite" class="panel Capstone_Project_Test_Suite">
-          <div class="suite-Capstone_Project_Test_Suite-class-passed">
+          <div class="suite-Capstone_Project_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">runners.CheckoutRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -170,15 +179,35 @@
                   </a> <!-- runScenario("User logs in, adds a MacBook to the cart, and proceeds to checkout", "Checkout") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User logs in, adds a MacBook to the cart, and proceeds to checkout","Checkout")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d817dc6e8bf1f501edf188ad7e7eec, get {url=https://demo.opencart.com.gr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\VISHAL\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59060/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3d817dc6e8bf1f501edf188ad7e7eec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
+	at steps.RegisterSteps.setup(RegisterSteps.java:22)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Capstone_Project_Test_Suite-class-passed -->
-          <div class="suite-Capstone_Project_Test_Suite-class-passed">
+          </div> <!-- suite-Capstone_Project_Test_Suite-class-failed -->
+          <div class="suite-Capstone_Project_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">runners.SearchRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -188,12 +217,146 @@
                   </a> <!-- runScenario("Search for MacBook, filter by category, and sort results", "Search Functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Search for MacBook, filter by category, and sort results","Search Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d817dc6e8bf1f501edf188ad7e7eec, get {url=https://demo.opencart.com.gr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\VISHAL\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59060/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3d817dc6e8bf1f501edf188ad7e7eec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
+	at steps.RegisterSteps.setup(RegisterSteps.java:22)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Capstone_Project_Test_Suite-class-passed -->
+          </div> <!-- suite-Capstone_Project_Test_Suite-class-failed -->
+          <div class="suite-Capstone_Project_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.ProductDetailsRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Product Details After Search&quot;, &quot;Product Details Validation&quot;)">
+                  </a> <!-- runScenario("Validate Product Details After Search", "Product Details Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Product Details After Search","Product Details Validation")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d817dc6e8bf1f501edf188ad7e7eec, get {url=https://demo.opencart.com.gr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\VISHAL\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59060/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3d817dc6e8bf1f501edf188ad7e7eec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
+	at steps.RegisterSteps.setup(RegisterSteps.java:22)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Capstone_Project_Test_Suite-class-failed -->
+          <div class="suite-Capstone_Project_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.ShoppingCartRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add, Update, and Remove Items in Cart&quot;, &quot;Shopping Cart Functionality&quot;)">
+                  </a> <!-- runScenario("Add, Update, and Remove Items in Cart", "Shopping Cart Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add, Update, and Remove Items in Cart","Shopping Cart Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d817dc6e8bf1f501edf188ad7e7eec, get {url=https://demo.opencart.com.gr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\VISHAL\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59060/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3d817dc6e8bf1f501edf188ad7e7eec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
+	at steps.RegisterSteps.setup(RegisterSteps.java:22)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Capstone_Project_Test_Suite-class-failed -->
+          <div class="suite-Capstone_Project_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.HomeRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Search and Recommended For You&quot;, &quot;Home Page Validation&quot;)">
+                  </a> <!-- runScenario("Validate Search and Recommended For You", "Home Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Search and Recommended For You","Home Page Validation")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d817dc6e8bf1f501edf188ad7e7eec, get {url=https://demo.opencart.com.gr}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\VISHAL\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59060/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3d817dc6e8bf1f501edf188ad7e7eec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
+	at steps.RegisterSteps.setup(RegisterSteps.java:22)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Capstone_Project_Test_Suite-class-failed -->
           <div class="suite-Capstone_Project_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -216,60 +379,6 @@
                   </a> <!-- runScenario("Registering a new user", "User Registration") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Registering a new user","User Registration")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Capstone_Project_Test_Suite-class-passed -->
-          <div class="suite-Capstone_Project_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">runners.ProductDetailsRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Validate Product Details After Search&quot;, &quot;Product Details Validation&quot;)">
-                  </a> <!-- runScenario("Validate Product Details After Search", "Product Details Validation") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate Product Details After Search","Product Details Validation")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Capstone_Project_Test_Suite-class-passed -->
-          <div class="suite-Capstone_Project_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">runners.ShoppingCartRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Add, Update, and Remove Items in Cart&quot;, &quot;Shopping Cart Functionality&quot;)">
-                  </a> <!-- runScenario("Add, Update, and Remove Items in Cart", "Shopping Cart Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Add, Update, and Remove Items in Cart","Shopping Cart Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Capstone_Project_Test_Suite-class-passed -->
-          <div class="suite-Capstone_Project_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">runners.HomeRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Validate Search and Recommended For You&quot;, &quot;Home Page Validation&quot;)">
-                  </a> <!-- runScenario("Validate Search and Recommended For You", "Home Page Validation") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate Search and Recommended For You","Home Page Validation")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -373,45 +482,45 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'runners.CheckoutRunner')
-data.setCell(0, 3, 11701);
+data.setCell(0, 2, 'runners.RegistrationRunner')
+data.setCell(0, 3, 11738);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'runners.RegistrationRunner')
-data.setCell(1, 3, 11419);
+data.setCell(1, 2, 'runners.LoginRunner')
+data.setCell(1, 3, 7843);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'runners.LoginRunner')
-data.setCell(2, 3, 9860);
+data.setCell(2, 2, 'runners.RegistrationRunner')
+data.setCell(2, 3, 7757);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'runners.RegistrationRunner')
-data.setCell(3, 3, 8903);
+data.setCell(3, 2, 'runners.LoginRunner')
+data.setCell(3, 3, 6774);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
-data.setCell(4, 2, 'runners.LoginRunner')
-data.setCell(4, 3, 7592);
+data.setCell(4, 2, 'runners.HomeRunner')
+data.setCell(4, 3, 3712);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
-data.setCell(5, 2, 'runners.ProductDetailsRunner')
-data.setCell(5, 3, 6973);
+data.setCell(5, 2, 'runners.SearchRunner')
+data.setCell(5, 3, 78);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
-data.setCell(6, 2, 'runners.SearchRunner')
-data.setCell(6, 3, 6910);
+data.setCell(6, 2, 'runners.ShoppingCartRunner')
+data.setCell(6, 3, 71);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
-data.setCell(7, 2, 'runners.ShoppingCartRunner')
-data.setCell(7, 3, 6384);
+data.setCell(7, 2, 'runners.ProductDetailsRunner')
+data.setCell(7, 3, 69);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
-data.setCell(8, 2, 'runners.HomeRunner')
-data.setCell(8, 3, 5462);
+data.setCell(8, 2, 'runners.CheckoutRunner')
+data.setCell(8, 3, 41);
 window.suiteTableData['Capstone_Project_Test_Suite']= { tableData: data, tableDiv: 'times-div-Capstone_Project_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Capstone_Project_Test_Suite">
               </div> <!-- times-div-Capstone_Project_Test_Suite -->
             </div> <!-- times-div -->
@@ -439,114 +548,124 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runners.RegistrationRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6df31abf)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@1109730f)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Registering a new user", "User Registration")</span>
-                <span class="method-start">1128 ms</span>
+                <span class="method-start">1198 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Registering a new user", "User Registration")</span>
-                <span class="method-start">12563 ms</span>
+                <span class="method-start">12944 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">21466 ms</span>
+                <span class="method-start">20707 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runners.LoginRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6df31abf)</span>
-                <span class="method-start">21529 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@1109730f)</span>
+                <span class="method-start">20771 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Logging in with registered credentials", "User Login")</span>
-                <span class="method-start">21544 ms</span>
+                <span class="method-start">20797 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Attempt login with incorrect credentials and reset password", "User Login")</span>
-                <span class="method-start">31406 ms</span>
+                <span class="method-start">27574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">39000 ms</span>
+                <span class="method-start">35419 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runners.HomeRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6df31abf)</span>
-                <span class="method-start">39024 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@1109730f)</span>
+                <span class="method-start">35449 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Validate Search and Recommended For You", "Home Page Validation")</span>
-                <span class="method-start">39045 ms</span>
+                <span class="method-start">35470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">44510 ms</span>
+                <span class="method-start">39190 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runners.SearchRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6df31abf)</span>
-                <span class="method-start">44538 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@1109730f)</span>
+                <span class="method-start">39223 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Search for MacBook, filter by category, and sort results", "Search Functionality")</span>
-                <span class="method-start">44558 ms</span>
+                <span class="method-start">39249 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">51470 ms</span>
+                <span class="method-start">39329 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runners.ProductDetailsRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6df31abf)</span>
-                <span class="method-start">51492 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@1109730f)</span>
+                <span class="method-start">39372 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Validate Product Details After Search", "Product Details Validation")</span>
-                <span class="method-start">51508 ms</span>
+                <span class="method-start">39404 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">58483 ms</span>
+                <span class="method-start">39476 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runners.ShoppingCartRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6df31abf)</span>
-                <span class="method-start">58508 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@1109730f)</span>
+                <span class="method-start">39504 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Add, Update, and Remove Items in Cart", "Shopping Cart Functionality")</span>
-                <span class="method-start">58525 ms</span>
+                <span class="method-start">39528 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">64911 ms</span>
+                <span class="method-start">39601 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runners.CheckoutRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6df31abf)</span>
-                <span class="method-start">64933 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@1109730f)</span>
+                <span class="method-start">39631 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User logs in, adds a MacBook to the cart, and proceeds to checkout", "Checkout")</span>
-                <span class="method-start">64946 ms</span>
+                <span class="method-start">39648 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">76647 ms</span>
+                <span class="method-start">39691 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
