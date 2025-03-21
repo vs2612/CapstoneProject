@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features/Home.feature",
     glue = "steps",
-    plugin = {"pretty", "html:target/cucumber-reports/home.html"}
+    plugin = {"pretty", "html:target/home.html"}
 )
 public class HomeRunner extends AbstractTestNGCucumberTests {
 }
