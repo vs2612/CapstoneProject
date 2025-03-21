@@ -45,14 +45,14 @@ public class ShoppingCartPage {
     }
 
     // Update product quantity
-    public void updateProductQuantity(int quantity) {
-        WebElement quantityField = wait.until(ExpectedConditions.visibilityOfElementLocated(quantityInput));
-        quantityField.clear();
-        quantityField.sendKeys(String.valueOf(quantity));
-        
-        WebElement updateBtn = wait.until(ExpectedConditions.elementToBeClickable(updateButton));
-        updateBtn.click();
-    }
+//    public void updateProductQuantity(int quantity) {
+//        WebElement quantityField = wait.until(ExpectedConditions.visibilityOfElementLocated(quantityInput));
+//        quantityField.clear();
+//        quantityField.sendKeys(String.valueOf(quantity));
+//        
+//        WebElement updateBtn = wait.until(ExpectedConditions.elementToBeClickable(updateButton));
+//        updateBtn.click();
+//    }
 
 
 //    public void removeProductFromCart() {

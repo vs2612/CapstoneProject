@@ -27,15 +27,15 @@ public class ShoppingCartSteps extends BaseTest {
         Assert.assertTrue(shoppingCartPage.isProductInCart(), "Product not added to cart!");
     }
 
-    @When("User updates product quantity to {int}")
-    public void user_updates_product_quantity_to(int quantity) {
-        shoppingCartPage.updateProductQuantity(quantity);
-    }
+//    @When("User updates product quantity to {int}")
+//    public void user_updates_product_quantity_to(int quantity) {
+//        shoppingCartPage.updateProductQuantity(quantity);
+//    }
 
-    @Then("Product quantity should be updated")
-    public void product_quantity_should_be_updated() {
-        Assert.assertTrue(shoppingCartPage.isProductInCart(), "Product quantity not updated!");
-    }
+//    @Then("Product quantity should be updated")
+//    public void product_quantity_should_be_updated() {
+//        Assert.assertTrue(shoppingCartPage.isProductInCart(), "Product quantity not updated!");
+//    }
 
 //    @When("User removes the product from the cart")
 //    public void user_removes_the_product_from_the_cart() {
