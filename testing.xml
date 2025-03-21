@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Capstone Project Test Suite" verbose="1">
+    <test name="Capstone Test Execution">
+        <classes>
+        	<class name="runners.RegistrationRunner"/>
+            <class name="runners.LoginRunner"/>
+            <class name="runners.HomeRunner"/>
+            <class name="runners.SearchRunner"/>
+            <class name="runners.ProductDetailsRunner"/>
+            <class name="runners.ShoppingCartRunner"/>
+            <class name="runners.CheckoutRunner"/>
+        </classes>
+    </test>
+</suite>
