@@ -12,13 +12,13 @@ public class AddToCartPage {
 
     // Locators
     private By loginButton = By.xpath("//*[@id='top-links']/ul/li[2]/a"); 
-    private By loginLink = By.xpath("//*[@id='top-links']/ul/li[2]/ul/li[2]/a"); // Login option
+    private By loginLink = By.xpath("//a[contains(text(), 'Login')]");
     private By emailField = By.id("input-email");
     private By passwordField = By.id("input-password");
     private By submitLogin = By.xpath("//*[@id='content']/div/div[2]/div/form/input");
     private By yourStore = By.xpath("//*[@id='logo']/h1/a"); // ✅ Fixed XPath
-    private By addToCartButton = By.xpath("//*[@id='content']/div[2]/div[1]/div/div[3]/button[1]/span");
-    private By cartButton = By.xpath("//*[@id='top-links']/ul/li[4]/a/i");
+    private By addToCartButton = By.xpath("//button[contains(@onclick, 'cart.add')]");
+    private By cartButton = By.xpath("//a[@title='Shopping Cart']");
     private By checkoutButton = By.linkText("Checkout");
 
     public AddToCartPage(WebDriver driver) {

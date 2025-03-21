@@ -14,11 +14,11 @@ public class ShoppingCartPage {
 
     // Locators
     private By addToCartButton = By.xpath("//button[contains(@onclick, 'cart.add')]");
-    private By cartButton = By.xpath("//*[@id=\"top-links\"]/ul/li[4]/a/span");
+    private By cartButton = By.xpath("//a[@title='Shopping Cart']");
     private By cartForm = By.xpath("//*[@id=\"content\"]/form");
     private By quantityInput = By.xpath("//*[@id=\"content\"]/form/div/table/tbody/tr/td[4]/div/input");
     private By updateButton = By.xpath("//*[@id=\"content\"]/form/div/table/tbody/tr/td[4]/div/span/button[1]");
-    private By removeButton = By.xpath("//*[@id=\"content\"]/form/div/table/tbody/tr/td[4]/div/span/button[2]");
+
 
     // Constructor
     public ShoppingCartPage(WebDriver driver) {
