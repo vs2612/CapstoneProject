@@ -14,16 +14,11 @@ public class HomePage {
     private WebDriverWait wait;
 
     // Locators
- 
-
-    private By searchBox = By.xpath("//input[contains(@name, 'search') or @placeholder='Search']");
-
-    private By featuredImages = By.xpath("//div[contains(@class, 'product-layout')]//div[@class='image']/a/img");
-    private By featuredImage1 = By.xpath("(//div[contains(@class, 'product-layout')]//div[@class='image']/a/img)[1]");
-    private By featuredImage2 = By.xpath("(//div[contains(@class, 'product-layout')]//div[@class='image']/a/img)[2]");
-    private By featuredImage3 = By.xpath("(//div[contains(@class, 'product-layout')]//div[@class='image']/a/img)[3]");
-    private By featuredImage4 = By.xpath("(//div[contains(@class, 'product-layout')]//div[@class='image']/a/img)[4]");
-
+    private By searchBox = By.xpath("//*[@id=\"search\"]/input");
+    private By featuredImage1 = By.xpath("//*[@id=\"content\"]/div[2]/div[1]/div/div[1]/a/img");
+    private By featuredImage2 = By.xpath("//*[@id=\"content\"]/div[2]/div[2]/div/div[1]/a/img");
+    private By featuredImage3 = By.xpath("//*[@id=\"content\"]/div[2]/div[3]/div/div[1]/a/img"); // Fixed incorrect div index
+    private By featuredImage4 = By.xpath("//*[@id=\"content\"]/div[2]/div[4]/div/div[1]/a/img"); // Fixed incorrect div index
 
     // Constructor
     public HomePage(WebDriver driver) {

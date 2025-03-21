@@ -13,17 +13,13 @@ public class SearchPage {
     private WebDriverWait wait;
 
     // Locators
-
-    private By searchBox = By.xpath("//input[contains(@name, 'search') or @placeholder='Search']");
-
-    private By categoryDropdown = By.xpath("//select[contains(@id, 'category') or contains(@class, 'category-select')]");
-    private By firstCategoryOption = By.xpath("(//select[contains(@id, 'category')]//option)[1]");
-
+    private By searchBox = By.xpath("//*[@id=\"search\"]/input");
+    private By categoryDropdown = By.xpath("//*[@id=\"content\"]/div[1]/div[2]/select");
+    private By firstCategoryOption = By.xpath("//*[@id=\"content\"]/div[1]/div[2]/select/option[1]");
     private By searchButton = By.id("button-search");
-
-    private By sortDropdown = By.xpath("//select[contains(@id, 'sort')]");
-    private By sortByPrice = By.xpath("//select[contains(@id, 'sort')]/option[contains(text(), 'Price')]");
-    private By sortByRating = By.xpath("//select[contains(@id, 'sort')]/option[contains(text(), 'Rating')]");
+    private By sortDropdown = By.id("input-sort");
+    private By sortByPrice = By.xpath("//*[@id=\"input-sort\"]/option[5]");
+    private By sortByRating = By.xpath("//*[@id=\"input-sort\"]/option[6]");
 
     // Constructor
     public SearchPage(WebDriver driver) {

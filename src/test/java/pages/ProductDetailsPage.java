@@ -15,26 +15,16 @@ public class ProductDetailsPage {
     private WebDriverWait wait;
 
     // Locators (Search & Product Page)
-
-    private By searchBox = By.xpath("//input[contains(@name, 'search') or @placeholder='Search']");
-
-    private By productTitleLink = By.xpath("//div[contains(@class, 'caption')]//h4/a[contains(text(),'MacBook')]");
-    private By productTitle = By.xpath("//div[@id='content']//h1");  
-
-    private By productDescription = By.id("tab-description");
-
-    private By productPrice = By.xpath("//div[@id='content']//h2[contains(@class, 'price') or contains(text(), '$')]");
-
-    private By productImages = By.xpath("//div[@id='content']//ul/li/a/img");
-
-    private By productAvailability = By.xpath("//div[@id='content']//ul/li[contains(text(), 'Availability')]");
-
-    private By wishlistButton = By.xpath("//button[contains(@data-original-title, 'Add to Wish List') or contains(@onclick, 'wishlist.add')]");
-
+    private By searchBox = By.xpath("//*[@id=\"search\"]/input");
+    private By productTitleLink = By.xpath("//div[@class='caption']/h4/a[contains(text(),'MacBook')]");
+    private By productTitle = By.xpath("//*[@id='content']/div/div[2]/h1");
+    private By productDescription = By.xpath("//*[@id='tab-description']");
+    private By productPrice = By.xpath("//*[@id='content']/div/div[2]/ul[2]/li/h2");
+    private By productImages = By.xpath("//*[@id='content']/div/div[1]/ul/li/a/img");
+    private By productAvailability = By.xpath("//*[@id='content']/div/div[2]/ul[1]/li[2]");
+    private By wishlistButton = By.xpath("//*[@id=\"content\"]/div/div[2]/div[1]/button[1]");
     private By checkWishlist = By.id("wishlist-total");
-
-    private By itemTable = By.xpath("//div[@id='content']//table[contains(@class, 'wishlist') or contains(@class, 'table')]");
-
+    private By itemTable = By.xpath("//*[@id=\"content\"]/div[1]");
 
 
     // Constructor
